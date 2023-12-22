@@ -18,9 +18,11 @@ use log::*;
 
 #[macro_use]
 mod console;
+mod batch;
 mod lang_items;
 mod logging;
 mod sbi;
+mod sync;
 global_asm!(include_str!("entry.asm"));
 
 /// the rust entry point of the kernel
